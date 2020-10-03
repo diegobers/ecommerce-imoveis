@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+
+
+
+
+
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="Venda, imóveis, leilão, terreno, são josé, ............">
+	<meta name="description" content="Site de imobiliária para venda de imóveis particulares, imóveis leilão caixa e terrenos ">
+	<meta name="author" content="Diego Bernardi - diego-bs@hotmail.com">
+
+	<!-- bootstrap local file -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="canonical" href="http://joselaineimoveis.com.br/">
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+<title>Visualiza Processos</title>
+</head>
+<body>
+
+
+
+	<br>
+	<div class="container">
+
+		<div class="row">
+
+			<nav class="nav nav-tabs col-10">							
+				<a class="nav-link font-weight-bold" href="user-home.html">Visualizar Proposta</a>
+				<a class="nav-link font-weight-bold" href="visualiza-processo.html">Visualizar Processo</a>
+				<a class="nav-link font-weight-bold" href="user-mensagem.html">Mensagens</a>
+
+			</nav>
+
+
+			<div class="justify-content-end nav nav-tabs col-2 pr-0">
+
+				<a class="nav-link bg-secondary text-white font-weight-bold" href="login.html">Sair</a>
+			</div>	
+
+
+		</div>
+
+	</div>
+
+	<br>
+
+	<div class="container text-center">
+		<div class="nav nav-tabs justify-content-center">
+			
+			<h4 class="nav-link active text-monospace">Proposta de Compra Completa</h4>
+		</div>
+		<table class="table table-hover">
+
+			<thead>
+				<tr>
+					<th>Código</th>
+					<th>CPF/CNPJ comprador</th>
+					<th>CPF/CNPF vendedor</th>
+					<th>Valor imóvel</th>
+					<th>Endereço</th>
+					<th>Codigo avalição de risco</th>
+					<th>Situação</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>11111111111-1</td>
+					<td>333333333-1</td>
+					<td>R$ 3,0</td>
+					<td>Loteamento lisboa</td>
+					<td>99999999</td>
+					<td>Enviado p/ cartorio</td>
+				</tr>
+
+			</tbody>
+
+
+		</table>
+	</div>
+
+
+	<br>
+
+
+	<div class="container text-center">
+		
+		<button type="button" class="btn btn-primary pw-0" data-toggle="modal" data-target="#idPropostaModal" data-whatever="@idProposta">Solicitar Alteração</button>
+
+
+
+		<div class="modal fade" id="idPropostaModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+
+				<div class="modal-content">
+
+
+					<div class="modal-header">
+						<h5 class="modal-title" id="modalLabel">Informe seu problema</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<textarea class="form-control" id="message-text" placeholder="Digite aqui..."></textarea>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+						
+						<div class="container">
+							
+							<button type="button" class="btn btn-primary">Enviar Mensagem</button>
+							
+
+
+							<div class="container">
+
+								<div class="alert alert-success">
+									<strong>Mensagem enviada!</strong> Visualize sua mensagem <a href="user-mensagem.html" class="alert-link">aqui</a>.
+								</div>
+							</div>
+
+
+
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+	</div> 
+
+</body>
+</html>

@@ -16,26 +16,33 @@
 </head>
 <body>
 	<br>
-
-
 	<div class="container">
 
 		<div class="row">
 
 			<nav class="nav nav-tabs col-10">
 
-				<a class="nav-link active text-monospace" href="#">Inicio</a>
-				<a class="nav-link font-weight-bold" href="cadastro-imovel.html">Cadastro imoveis</a>
-				<a class="nav-link font-weight-bold" href="cadastro-cliente.html">Cadastro clientes</a>
-				<a class="nav-link font-weight-bold" href="cadastro-processo.html">Cadastro processos</a>
+				<div class="dropdown">
+
+					<a class="dropdown-toggle nav-link active text-monospace" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Início</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Action</a>
+						<a class="dropdown-item" href="#">Another action</a>
+					</div>	
+				</div>
+
+				<a class="nav-link font-weight-bold" href="cadastro-imovel.html">Cadastrar Imóvel</a>
+				<a class="nav-link font-weight-bold" href="cadastro-proposta.html">Cadastrar Proposta</a>
+				<a class="nav-link font-weight-bold" href="cadastro-cliente.html">Cadastar Cliente</a>
+				<a class="nav-link font-weight-bold" href="cadastro-processo.html">Cadastrar Processo</a>
 				<a class="nav-link font-weight-bold" href="admin-mensagem.html">Mensagens</a>
 
 			</nav>
 
-				
+
 			<div class="justify-content-end nav nav-tabs col-2 pr-0">
 
-				<a class="nav-link bg-info text-white font-weight-bold" href="login.html">Voltar</a>
+				<a class="nav-link bg-info text-white font-weight-bold" href="login.html">Sair</a>
 			</div>	
 
 
@@ -43,6 +50,88 @@
 
 	</div>
 
+	<br>
+	<div class="container">
+
+		<h4>Propostas à vencer /  </h4>
+
+		<table class="table table-hover">
+
+			<thead>
+				<tr>
+					<th>Código contrato</th>
+					<th>CPF/CNPF comprador</th>
+					<th>CPF/CNPF vendedor</th>
+					<th>Valor imóvel</th>
+					<th>Endereço</th>
+					<th>Codigo avalição de risco</th>
+					<th>Situação</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>11111111111-1</td>
+					<td>333333333-1</td>
+					<td>R$ 3,0</td>
+					<td>Loteamento lisboa</td>
+					<td>99999999</td>
+					<td>Enviado p/ cartorio</td>
+				</tr>
+
+			</tbody>
+
+
+
+
+		</table>
+
+
+
+	</div>
+
+
+
+<br>
+<br>
+	<div class="container">
+
+		<h4>Processos/Prazos à vencer  </h4>
+
+		<table class="table table-hover">
+
+			<thead>
+				<tr>
+					<th>Código contrato</th>
+					<th>CPF/CNPF comprador</th>
+					<th>CPF/CNPF vendedor</th>
+					<th>Valor imóvel</th>
+					<th>Endereço</th>
+					<th>Codigo avalição de risco</th>
+					<th>Situação</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>11111111111-1</td>
+					<td>333333333-1</td>
+					<td>R$ 3,0</td>
+					<td>Loteamento lisboa</td>
+					<td>99999999</td>
+					<td>Enviado p/ cartorio</td>
+				</tr>
+
+			</tbody>
+
+
+
+
+		</table>
+
+
+
+	</div>
 
 
 </body>
