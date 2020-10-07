@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="Venda, imóveis, leilão, terreno, são josé, ............">
+	<meta name="description" content="Site de imobiliária para venda de imóveis particulares, imóveis leilão caixa e terrenos ">
+	<meta name="author" content="Diego Bernardi - diego-bs@hotmail.com">
+
+	<!-- bootstrap local file -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="canonical" href="http://www.joselaineimoveis.com.br/">
+
+	<title>Cadastrar Anúncio</title>
+</head>
+<body>
+	<br>
+
+
+	<div class="container">
+
+		<div class="row">
+
+			<nav class="nav nav-tabs col-10">
+
+				<a class="nav-link font-weight-bold" href="admin-home.html">Início</a>
+				<a class="nav-link active text-monospace" href="#">Cadastrar Anúncio</a>
+				<a class="nav-link font-weight-bold" href="cadastro-proposta.html">Cadastrar Proposta</a>
+				<a class="nav-link font-weight-bold" href="cadastro-usuario.html">Cadastrar Usuário</a>
+				<a class="nav-link font-weight-bold" href="cadastro-processo.html">Cadastrar Processo</a>
+				<a class="nav-link font-weight-bold" href="admin-mensagem.html">Mensagens</a>
+
+			</nav>
+
+
+			<div class="justify-content-end nav nav-tabs col-2 pr-0">
+
+				<a class="nav-link bg-info text-white font-weight-bold" href="login.html">Sair</a>
+			</div>	
+
+
+		</div>
+
+	</div>
+
+	<!-- codigo, status, descrição, nome anuncio, tipo imovel..., dormitórios, suite, banheiro, lavabo, vaga de garagem, m² área privada, endereço completo, valor imovel, valor condominio...iptu, fotos, pre-condições de proposta
+	-->
+
+	<div class="container" id="formAnuncio">
+		<br>
+		<form>
+			<div class="form-row">
+
+				<div class="form-group col-6">
+					<label for="selectStatus">Status :</label>
+					<select class="form-control" id="selectStatus">
+						<option>Anúncio</option>
+						<option>Destaque</option>
+						<option>Lançamento</option>
+					</select>
+				</div>
+				<div class="form-group col-6">
+					<label for="selectTipo">Tipo imóvel :</label>
+					<select class="form-control" id="selectTipo">
+						<option>Casa unifamiliar</option>
+						<option>Casa germinada</option>
+						<option>Apartamento</option>
+						<option>Sobrado</option>
+					</select>
+				</div>
+
+			</div>	
+
+			<div class="form-row">
+				
+				<div class="form-group col-4">
+					<div class="form-check form-check-inline">
+						<label class="px-1" for="selectQtdDormitorio">Dormitórios </label>
+						<select class="form-control" id="selectQtdDormitorio">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div>
+
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="tagPossuiSuite" id="radioOpcSuite" value="optionSuite">
+						<label class="form-check-label" for="radioOpcSuite">Com suíte</label>
+					</div>
+					<!--
+
+					<div class="form-check form-check-inline custom-control custom-switch">
+						<input type="checkbox" class="custom-control-input" id="switchOpcSuite">
+						<label class="custom-control-label" for="switchOpcSuite">Com suíte</label>
+					</div>
+				-->
+
+			</div>	
+
+			<div class="form-group col-4">
+				<div class="form-group form-check form-check-inline">
+					<label class="px-1" for="selectQtdBanheiro">Banheiros </label>
+					<select class="form-control" id="selectQtdBanheiro">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="tagPossuiLavabo" id="radioOpcLavabo" value="optionLavabo">
+					<label class="form-check-label" for="radioOpcLavabo">Com lavabo</label>
+				</div>
+			</div>
+
+			<div class="form-group col-4">
+				<div class="form-group form-check form-check-inline">
+					<label class="px-1" for="selectQtdGaragem">Garagem </label>
+					<select class="form-control" id="selectQtdGaragem">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="tagGaragemCoberta" id="radioGaragemCoberta" value="optionGaragemCoberta">
+					<label class="form-check-label" for="radioGaragemCoberta">Coberta</label>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="form-row">
+
+			<div class="form-group col-1">
+				<label for="inputCep">Cep :</label>
+				<input type="text" class="form-control" id="inputCep" placeholder="-----/--">
+			</div>
+			<div class="form-group col-3">
+				<label for="inputEndereco">Endereço :</label>
+				<input type="text" class="form-control" id="inputEndereco" placeholder="Rua/avenida/servidão">
+			</div>
+			<div class="form-group col-1">
+				<label for="inputEndereco">Q/L :</label>
+				<input type="text" class="form-control" id="inputEndereco">
+			</div>
+
+			<div class="form-group col-2">
+				<label for="inputBairro">Bairro :</label>
+				<input type="text" class="form-control" id="inputBairro">
+			</div>
+
+			<div class="form-group col-2">
+				<label for="inputLoteamento">Loteamneto :</label>
+				<input type="text" class="form-control" id="inputLoteamento">
+			</div>
+
+			<div class="form-group col-2">
+				<label for="inputcidade">Cidade :</label>
+				<input type="text" class="form-control" id="inputcidade">
+			</div>
+			<div class="form-group col-1">
+				<label class="px-1" for="inputcidade">Estado </label>
+				<select class="form-control" id="inputcidade">
+					<option>SC</option>
+					<option>PR</option>
+					<option>RS</option>
+				</select>
+
+			</div>
+
+		</div>
+
+		<div class="form-row">
+
+			<div class="form-group col-2">
+				<label for="inputAreaConstruida">Área construida :</label>
+				<input type="text" class="form-control" id="inputAreaConstruida" placeholder="m²">
+			</div>
+			<div class="form-group col-2">
+				<label for="inputAreaTerreno">Área terreno :</label>
+				<input type="text" class="form-control" id="inputAreaTerreno" placeholder="m²">
+			</div>
+			<div class="form-group col-2">
+				<label for="inputVlrIptu">Valor IPTU :</label>
+				<input type="text" class="form-control" id="inputVlrIptu" placeholder="R$">
+			</div>
+			<div class="form-group col-2">
+				<label for="inputTaxaLixo">Taxa lixo :</label>
+				<input type="text" class="form-control" id="inputTaxaLixo" placeholder="R$">
+			</div>
+			<div class="form-group col-2">
+				<label for="inputCondominio">Condomínio :</label>
+				<input type="text" class="form-control" id="inputCondominio" placeholder="R$">
+			</div>
+			<div class="form-group col-2">
+				<label for="inputVlrImovel">Valor imóvel :</label>
+				<input type="text" class="form-control" id="inputVlrImovel" placeholder="R$">
+			</div>
+
+		</div>
+
+		<div class="form-group">
+			<label for="textAreaDescricao">Descrição :</label>
+			<textarea class="form-control" id="textAreaDescricao" rows="3"></textarea>
+		</div>
+
+		<label for="textAreaDescricao">Importar fotos :</label>
+		<div class="float-left form-group custom-file">
+			<input type="file" class="custom-file-input" id="inputArquivosFotos">
+			<label class="custom-file-label" for="inputArquivosFotos" data-browse="Abrir"></label>
+		</div>
+
+		<br>
+
+		<div class="form-row justify-content-center">
+
+			<button type="submit" class="btn btn-primary">Salvar</button>
+		</div>
+
+	</form>
+
+
+</div>
+
+
+</body>
+</html>
