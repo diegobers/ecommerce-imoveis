@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="canonical" href="http://www.joselaineimoveis.com.br/">
 
-	<title>Cadastrar Anúncio</title>
+	<title>Cadastrar Anúncio Leilão</title>
 </head>
 <body>
 	<br>
@@ -25,7 +25,7 @@
 			<nav class="nav nav-tabs col-10">
 
 				<a class="nav-link font-weight-bold" href="admin-home.html">Início</a>
-				<a class="nav-link active text-monospace" href="#">Cadastrar Anúncio</a>
+				<a class="nav-link active text-monospace">Cadastrar Anúncio</a>
 				<a class="nav-link font-weight-bold" href="cadastro-proposta.html">Cadastrar Proposta</a>
 				<a class="nav-link font-weight-bold" href="cadastro-usuario.html">Cadastrar Usuário</a>
 				<a class="nav-link font-weight-bold" href="cadastro-processo.html">Cadastrar Processo</a>
@@ -52,60 +52,60 @@
 		
 
 		<div class="nav nav-tabs justify-content-center">
-
-			<a class="nav-link active text-monospace">Cadastro Imóvel</a>
-			<a class="nav-link font-weight-bold" href="cadastro-anuncio-leilao.html">Cadastro Leilão</a>
-			<a class="nav-link font-weight-bold" href="cadastro-anuncio-terreno.html">Cadastro Terreno</a>
+			
+			<a class="nav-link font-weight-bold"  href="cadastro-anuncio.html">Cadastro Imóvel</a>
+			<a class="nav-link active text-monospace">Cadastro Leilão</a>
+			<a class="nav-link font-weight-bold"  href="cadastro-anuncio-terreno.html">Cadastro Terreno</a>
 				
-		
+
 		</div>
 
 
 
 
-	<div class="container" id="formAnuncioImovel">
-		<br>
-		<form>
-			<div class="form-row">
+		<div class="container" id="formAnuncioLeilao">
+			<br>
+			<form>
+				<div class="form-row">
 
-				<div class="form-group col-6">
-					<label for="selectStatus">Status :</label>
-					<select class="form-control" id="selectStatus">
-						<option>Anúncio</option>
-						<option>Destaque</option>
-						<option>Lançamento</option>
-					</select>
-				</div>
-				<div class="form-group col-6">
-					<label for="selectTipo">Tipo imóvel :</label>
-					<select class="form-control" id="selectTipo">
-						<option>Casa unifamiliar</option>
-						<option>Casa germinada</option>
-						<option>Apartamento</option>
-						<option>Sobrado</option>
-					</select>
-				</div>
-
-			</div>	
-
-			<div class="form-row">
-				
-				<div class="form-group col-4">
-					<div class="form-check form-check-inline">
-						<label class="px-1" for="selectQtdDormitorio">Dormitórios </label>
-						<select class="form-control" id="selectQtdDormitorio">
-							<option>1</option>
-							<option>2</option>
-							<option>3</option>
-							<option>4</option>
-							<option>5</option>
+					<div class="form-group col-6">
+						<label for="selectStatus">Status :</label>
+						<select class="form-control" id="selectStatus">
+							<option>Anúncio</option>
+							<option>Destaque</option>
+						</select>
+					</div>
+					<div class="form-group col-6">
+						<label for="selectTipo">Tipo imóvel :</label>
+						<select class="form-control" id="selectTipo">
+							<option>Casa unifamiliar</option>
+							<option>Casa germinada</option>
+							<option>Apartamento</option>
+							<option>Sobrado</option>
+							<option>Terreno</option>
 						</select>
 					</div>
 
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="tagPossuiSuite" id="radioOpcSuite" value="optionSuite">
-						<label class="form-check-label" for="radioOpcSuite">Com suíte</label>
-					</div>
+				</div>	
+
+				<div class="form-row">
+
+					<div class="form-group col-4">
+						<div class="form-check form-check-inline">
+							<label class="px-1" for="selectQtdDormitorio">Dormitórios </label>
+							<select class="form-control" id="selectQtdDormitorio">
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+								<option>4</option>
+								<option>5</option>
+							</select>
+						</div>
+
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="tagPossuiSuite" id="radioOpcSuite" value="optionSuite">
+							<label class="form-check-label" for="radioOpcSuite">Com suíte</label>
+						</div>
 					<!--
 
 					<div class="form-check form-check-inline custom-control custom-switch">
@@ -157,7 +157,7 @@
 			</div>
 			<div class="form-group col-3">
 				<label for="inputEndereco">Endereço :</label>
-				<input type="text" class="form-control" id="inputEndereco" placeholder="Rua/avenida/servidão">
+				<input type="text" class="form-control" id="inputEndereco" placeholder="Avenida/rua/servidão">
 			</div>
 			<div class="form-group col-1">
 				<label for="inputEndereco">Q/L :</label>
@@ -240,7 +240,7 @@
 	</form>
 
 
-	</div>
+</div>
 
 </div>
 
