@@ -17,34 +17,134 @@
 <body>
 	<br>
 
-
 	<div class="container">
-
+		
 		<div class="row">
-
 			<nav class="nav nav-tabs col-10">
-
 				<a class="nav-link font-weight-bold" href="admin-home.html">Início</a>
 				<a class="nav-link font-weight-bold" href="cadastro-anuncio.html">Cadastrar Anúncio</a>
-				<a class="nav-link font-weight-bold" href="cadastro-proposta.html">Cadastrar Proposta</a>
-				<a class="nav-link font-weight-bold" href="cadastro-usuario.html">Cadastrar Usuário</a>
+				<a class="nav-link font-weight-bold" href="cadastro-proposta-pfisica.html">Cadastrar Proposta</a>
+				<a class="nav-link font-weight-bold" href="cadastro-comprador.html">Cadastrar Usuário</a>
 				<a class="nav-link active text-monospace" href="#">Cadastrar Processo</a>
-				<a class="nav-link font-weight-bold" href="admin-mensagem.html">Mensagens</a>
+				<a class="nav-link font-weight-bold" href="admin-mensagem.html">Msg</a>
 
 			</nav>
 
-				
-			<div class="justify-content-end nav nav-tabs col-2 pr-0">
-
+			
+			<div class="nav nav-tabs col-2 pr-0 justify-content-end">
 				<a class="nav-link bg-info text-white font-weight-bold" href="login.html">Sair</a>
+
 			</div>	
 
 
 		</div>
 
-	</div>
+
+		<div class="container" id="formCadProcesso">
+
+			<form>
+				<br>
+				<h5> - Comprador :</h5>
+				<div class="form-row justify-content-center">
+
+					<div class="form-group col-2">
+						<label for="inputCnpj">CPF / CNPJ</label>
+						<input type="text" class="form-control" id="inputCnpj" placeholder="---.---.---/--">
+					</div>
+					<div class="form-group col-4">
+						<label for="inputRazaoSocial">Nome completo / Razão social</label>
+						<input type="text" class="form-control" id="inputRazaoSocial" placeholder="...">
+					</div>
+
+					<div class="form-group col-2">
+						<label for="inputEmail">E-mail</label>
+						<input type="text" class="form-control" id="inputEmail" placeholder="...">
+					</div>
+
+					<div class="form-group col-2">
+						<label for="inputIE">RG ou IE</label>
+						<input type="text" class="form-control" id="inputIE" placeholder="">
+					</div>
+					<div class="form-group col-2">
+						<label for="inputFone">Telefone</label>
+						<input type="text" class="form-control" id="inputFone" placeholder="(--) ----/----">
+					</div>
+
+				</div>	
+				<hr>
+				<h5> - Vendedor :</h5>
+				<div class="form-row justify-content-center">
+
+					<div class="form-group col-2">
+						<label for="inputCnpj">CPF / CNPJ</label>
+						<input type="text" class="form-control" id="inputCnpj" placeholder="---.---.---/--">
+					</div>
+					<div class="form-group col-4">
+						<label for="inputRazaoSocial">Nome completo / Razão social</label>
+						<input type="text" class="form-control" id="inputRazaoSocial" placeholder="...">
+					</div>
+
+					<div class="form-group col-2">
+						<label for="inputEmail">E-mail</label>
+						<input type="text" class="form-control" id="inputEmail" placeholder="...">
+					</div>
+
+					<div class="form-group col-2">
+						<label for="inputIE">RG ou IE</label>
+						<input type="text" class="form-control" id="inputIE" placeholder="">
+					</div>
+					<div class="form-group col-2">
+						<label for="inputFone">Telefone</label>
+						<input type="text" class="form-control" id="inputFone" placeholder="(--) ----/----">
+					</div>
+
+				</div>	
+				<hr>
+				<div class="form-row justify-content-center">
+					<div class="form-group col-3">
+						<label for="inputStatus">Status</label>
+						<select class="form-control" id="inputStatus">
+							<option>Enviar documentos</option>
+							<option>Análise prefeitura</option>
+							<option>Enviado p/ registro</option>
+							<option>Assinar contrato</option>
+						</select>
+
+					</div>
+					
+					<div class="form-group col-2">
+						<label for="inputCodigoAnuncio">Referência anúncio</label>
+						<input type="text" class="form-control" id="inputCodigoAnuncio">
+					</div>	
+
+					<div class="form-group col-2">
+						<label for="inputCodigoProposta">Código proposta</label>
+						<input type="text" class="form-control" id="inputCodigoProposta">
+					</div>	
+
+					<div class="form-group col-2">
+						<label for="inputCorretor">Nome corretor</label>
+						<input type="text" class="form-control" id="inputCorretor">
+					</div>	
+
+
+				</div>
+
+				<div class="form-row justify-content-center">
+
+					<button type="submit" class="btn btn-primary">Salvar</button>
+				</div>
+
+			</form>		
 
 
 
-</body>
-</html>
+
+
+
+		</div>
+
+
+
+	</body>
+	</html>
